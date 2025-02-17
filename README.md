@@ -4,7 +4,7 @@ Este proyecto se enfoca en crear una aplicación web utilizando **Laravel** que 
 
 ---
 
-Antes de comenzar te dejo algunos atajos para escribir realizar más acciones en menos líneas:
+Antes de comenzar te dejo algunos atajos para realizar más acciones en menos líneas:
 ## 🗂️ Crear Carpetas Rápidamente
 Para crear las carpetas necesarias dentro de resources/views para agentes, categorias y propiedades:
 ```bash
@@ -14,6 +14,16 @@ mkdir resources/views/agentes resources/views/categorias resources/views/propied
 Para crear los archivos index.blade.php, edit.blade.php, show.blade.php y create.blade.php en cada carpeta:
 ```bash
 touch resources/views/{agentes,categorias,propiedades}/{index,edit,show,create}.blade.php
+```
+## ⚙️ 🔄 Crear Múltiples Modelos y  Controladores con Recursos
+Para crear los modelos Agente, Categoria y Propiedad:
+Para crear los modelos Agente, Categoria y Propiedad:
+
+```bash
+php artisan make:controller AgenteController --model=Agente --resource
+php artisan make:controller CategoriaController --model=Categoria --resource
+php artisan make:controller PropiedadController --model=Propiedad --resource
+
 ```
 ---
 
